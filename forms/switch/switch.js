@@ -18,13 +18,13 @@ switch (true) {
   case (temp < 32 && state == 'NE'):
     console.log(messages[0])
     break;
-  case (temp > 32 && temp < 50 && state == 'NE'):
+  case (temp >= 32 && temp <= 50 && state == 'NE'):
     console.log(messages[1])
     break;
-  case (temp > 32 && temp < 50 && state == 'FL'):
+  case (temp >= 32 && temp <= 50 && state == 'FL'):
     console.log(messages[2])
     break;
-  case (temp > 50 && temp < 70 && state == 'FL'):
+  case (temp > 50 && temp <= 70 && state == 'FL'):
     console.log(messages[3])
     break;
   default: console.log('Don\'t currently have a recommendation.')
